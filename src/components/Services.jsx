@@ -3,9 +3,9 @@ import React from "react";
 const Services = () => {
   return (
     <>
-      <div className="heading mt-20 w-11/12 mx-auto flex flex-col justify-center items-center gap-4 ">
+      <div className="heading mt-20 w-4/5 mx-auto flex flex-col justify-center items-center gap-4 ">
         <h3 className="font-extrabold text-4xl">My Services</h3>
-        <p className="w-1/2">
+        <p className="lg:w-1/2 w-full">
           I help brands look their best and connect with people through clean,
           modern designs. From digital products to eye-catching graphics, I
           create visuals that are both beautiful and effective.

@@ -3,8 +3,8 @@ import React from "react";
 const Work = () => {
   return (
     <>
-      <div className="work-process flex flex-col items-center justify-center py-10">
-        <div className="heading px-10 py-5 bg-black text-white w-1/2 flex flex-col items-center justify-center gap-6">
+      <div className="work-process flex flex-col items-center justify-center gap-10 py-10">
+        <div className="heading px-10 py-5 bg-black text-white w-11/12 lg:w-3/5 flex flex-col items-center justify-center gap-6">
           <h2 className="text-5xl">MY Work Process</h2>
           <p>
             I start by understanding your goals, then craft wireframes and
@@ -14,8 +14,8 @@ const Work = () => {
             along the way.
           </p>
         </div>
-        <div className="steps max-w-64s flex flex-col md:flex-row items-start justify-center gap-4">
-          <div className="step max-w-64 flex flex-col items-center justify-center gap-2 p-2 pt-5">
+        <div className="steps max-w-64s grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="step max-w-64 flex flex-col items-center justify-center gap-2 p-2 ">
             <div className="icon w-10">
               <img className="w-full" src="/research.png" alt="" />
             </div>
@@ -26,7 +26,7 @@ const Work = () => {
               ensures the design truly solves the problem at hand.
             </p>
           </div>
-          <div className="step max-w-64 flex flex-col items-center justify-center gap-2 p-2 pt-20">
+          <div className="step max-w-64 flex flex-col items-center justify-center gap-2 p-2 ">
             <div className="icon w-10">
               <img className="w-full" src="/ux.png" alt="" />
             </div>
@@ -38,7 +38,7 @@ const Work = () => {
               intuitive.
             </p>
           </div>
-          <div className="step max-w-64 flex flex-col items-center justify-center gap-2 p-2 pt-36">
+          <div className="step max-w-64 flex flex-col items-center justify-center gap-2 p-2 ">
             <div className="icon w-10">
               <img className="w-full" src="/ui.png" alt="" />
             </div>
@@ -49,7 +49,7 @@ const Work = () => {
               beautiful—they’re functional and user-friendly.
             </p>
           </div>
-          <div className="step max-w-64 flex flex-col items-center justify-center gap-2 p-2 pt-52">
+          <div className="step max-w-64 flex flex-col items-center justify-center gap-2 p-2 ">
             <div className="icon w-10">
               <img className="w-full" src="/deliver.png" alt="" />
             </div>
@@ -63,8 +63,8 @@ const Work = () => {
         </div>
       </div>
       <div className="about flex justify-center items-center  h-[40rem] ">
-        <div className="part1 w-1/3 bg-black h-full flex items-center justify-center relative ">
-          <div className="lg:h-[32rem] h-[23rem]  lg:w-[32rem] w-[23rem] rounded-full bg-white absolute left-[48%] overflow-hidden flex flex-col gap-5 items-center justify-center shadow-[0_0_40px_rgba(0,0,0,0.3)] p-6">
+        <div className="part1 w-[17%] sm:w-2/5 md:w-1/3 bg-black h-full flex items-center justify-center relative ">
+          <div className="hidden md:flex lg:h-[32rem] h-[22rem]  lg:w-[32rem] w-[22rem] rounded-full bg-white absolute left-[48%] overflow-hidden  flex-col gap-5 items-center justify-center shadow-[0_0_40px_rgba(0,0,0,0.3)] p-6">
             <h3 className="lg:text-3xl text-2xl font-semibold text-center">
               Do you need a designer.
               <br /> Request a quote!
@@ -82,16 +82,16 @@ const Work = () => {
             </p>
           </div>
         </div>
-        <div className="part2 w-1/4"></div>
-        <div className="part3 w-2/5 lg:px-20 px-10 flex flex-col items-center justify-center gap-6 ">
+        <div className="part2 w-[3%]  md:w-1/4"></div>
+        <div className="part3 w-4/5 sm:w-[55%] md:w-2/5 lg:px-20 px-10 flex flex-col items-center justify-center gap-6 ">
           <div className="skills">
-            <ul className="flex justify-start items-start gap-10 text-[#76838b]">
+            <ul className="flex justify-start items-start gap-10 text-[#76838b] lg:text-base text-sm">
               <li>UI/UX Designer</li>
               <li>Product Designer</li>
               <li>Graphic Designer</li>
             </ul>
           </div>
-          <h2 className="lg:text-5xl text-4xl">
+          <h2 className="lg:text-5xl text-3xl">
             I’m a passionate designer with a keen eye for details.
           </h2>
           <p className="text-[#555657]">

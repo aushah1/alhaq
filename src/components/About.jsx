@@ -4,7 +4,7 @@ const About = () => {
   return (
     <>
       <div className="part1 bg-[#cdcdcd] min-h-[34rem] flex flex-col gap-20 items-center justify-center">
-        <div className="text flex flex-col text-5xl items-center justify-center">
+        <div className="text flex flex-col text-3xl sm:text-5xl items-center justify-center">
           <h1>Hey, It's Alhaq Gowhar.</h1>
           <h1>Graphic Designer</h1>
           <h1>Based On Kashmir India</h1>
@@ -14,7 +14,7 @@ const About = () => {
           <div className="arrow">&darr;</div>
         </div>
       </div>
-      <div className="part2 flex flex-col lg:flex-row items-start justify-between py-10 px-40 gap-10">
+      <div className="part2 flex flex-col lg:flex-row items-start justify-between py-10 px-10 xl:px-40 gap-10">
         <div className="about flex flex-col justify-start items-start gap-5 lg:w-1/3 ">
           <h3 className="font-bold text-2xl">Biography</h3>
           <p className="text-lg text-[#505050]">
@@ -42,9 +42,9 @@ const About = () => {
             alt=""
           />
         </div>
-        <div className="counts lg:w-1/3 flex  justify-start items-center self-center gap-2">
+        <div className="counts xl:w-1/3 w-2/12 flex  justify-start items-center self-center gap-2 ">
           <div className="text">
-            <h2 className="count font-bold text-8xl">20+</h2>
+            <h2 className="count font-bold text-4xl sm:text-8xl">20+</h2>
             <p className="text-[#707070]">Completed Projects</p>
           </div>
           <div className="icon w-6">
@@ -52,7 +52,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="part3 links flex justify-center items-center gap-10">
+      <div className="part3 links flex justify-center items-center gap-10 ">
         <div className="img h-14">
           <img className="h-full" src="/linkedin2.png" alt="" />
         </div>

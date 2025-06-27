@@ -3,9 +3,9 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <footer className="py-16 px-28 min-h-[40rem] w-full bg-black text-white flex flex-col justify-center items-center gap-20">
-        <div className="top flex justify-between items-center lg:gap-24 gap-10">
-          <div className="text  w-1/2 flex flex-col justify-between items-start gap-5">
+      <footer className="py-16 px-5 sm:px-28 min-h-[40rem] w-full bg-black text-white flex flex-col justify-center items-center gap-20">
+        <div className="top flex sm:flex-row flex-col justify-between items-center lg:gap-24 gap-10">
+          <div className="text w-full sm:w-1/2 flex flex-col justify-between items-start gap-5">
             <h3 className="text-4xl">
               Have a project idea. Get in touch and let's chat!
             </h3>
@@ -17,7 +17,7 @@ const Footer = () => {
               LET'S WORK TOGETHER &rarr;{" "}
             </a>
           </div>
-          <div className="links w-1/2 flex flex-col justify-between items-center gap-5">
+          <div className="links w-full sm:w-1/2 flex flex-col justify-between items-start sm:items-center gap-5">
             <div className="box flex justify-between items-center gap-2">
               <div className="icon w-14">
                 <img className="invert w-full" src="/dribble.png" alt="" />
@@ -38,13 +38,13 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="middle grid grid-cols-3 gap-10">
+        <div className="middle grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-10">
           <div className="box flex flex-col items-center justify-center">
             <div className="icon w-8">
               <img className="w-full" src="/mail.png" alt="" />
             </div>
-            <p className="text-[#c1c1c1] text-sm">EMAIL ADDRESS</p>
-            <a className="font-bold" href="">
+            <p className="text-[#c1c1c1] text-xs sm:text-sm">EMAIL ADDRESS</p>
+            <a className="font-bold sm:text-base text-sm" href="">
               alhaqgowhar119@gmail.com
             </a>
           </div>
@@ -52,8 +52,8 @@ const Footer = () => {
             <div className="icon w-8">
               <img className="w-full" src="/location.png" alt="" />
             </div>
-            <p className="text-[#c1c1c1] text-sm">Location</p>
-            <a className="font-bold" href="">
+            <p className="text-[#c1c1c1] text-xs sm:text-sm">Location</p>
+            <a className="font-bold sm:text-base text-sm" href="">
               Kashmir.India
             </a>
           </div>
@@ -61,15 +61,15 @@ const Footer = () => {
             <div className="icon w-8">
               <img className="w-full" src="/phone.png" alt="" />
             </div>
-            <p className="text-[#c1c1c1] text-sm">Phone Number</p>
-            <a className="font-bold" href="">
+            <p className="text-[#c1c1c1] text-xs sm:text-sm">Phone Number</p>
+            <a className="font-bold sm:text-base text-sm" href="">
               8899886142
             </a>
           </div>
         </div>
-        <div className="bottom pt-10 text-[#c1c1c1] flex justify-between items-center gap-6 lg:gap-16 text-sm">
-          <div className="name flex flex-col justify-center items-center  ">
-            <h5 className="text-white">Alhaq The Designer</h5>
+        <div className="bottom pt-10 text-[#c1c1c1] flex justify-between items-center gap-6 lg:gap-16 sm:text-sm text-xs">
+          <div className="name hidden sm:flex flex-col justify-center items-center  ">
+            <h5 className="text-white ">Alhaq The Designer</h5>
             <h6>Graphic Designer</h6>
           </div>
           <ul className="flex items-center justify-between gap-2 ">

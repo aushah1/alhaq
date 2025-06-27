@@ -26,7 +26,7 @@ const Navbar = () => {
         </ul>
 
         {/* Center - Name */}
-        <div className="name flex flex-col justify-center items-center w-1/3">
+        <div className="name flex flex-col justify-center items-center w-1/3 text-xs sm:text-base">
           <h5>Alhaq The Designer</h5>
           <h6 className="text-[#505050]">Graphic Designer</h6>
         </div>
