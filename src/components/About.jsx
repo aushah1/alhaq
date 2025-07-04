@@ -16,7 +16,7 @@ const About = () => {
           <div className="arrow">&darr;</div>
         </div>
       </div>
-      <div className="part2 flex flex-col lg:flex-row items-start justify-between py-10 px-10 xl:px-40 gap-10">
+      <div className="part2 flex flex-col lg:flex-row items-start justify-between py-10 px-10 xl:px-40 gap-10  ">
         <div className="about flex flex-col justify-start items-start gap-5 lg:w-1/3 ">
           <h3 className="font-bold text-2xl">Biography</h3>
           <p className="text-lg text-[#505050]">
@@ -54,7 +54,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="part3 links flex justify-center items-center gap-10 ">
+      <div className="part3 links flex justify-center items-center gap-10   ">
         <div className="img h-14">
           <a target="_blank" href="https://www.linkedin.com/in/alhaq-gowhar/">
             <img className="h-full" src="/linkedin2.png" alt="" />{" "}

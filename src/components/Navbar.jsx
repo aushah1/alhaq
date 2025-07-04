@@ -25,7 +25,7 @@ const Navbar = () => {
               }>
               <a
                 href={item.link}
-                onClick={() => setActive(item)}
+                onClick={() => setActive(item.name)}
                 className="hover:text-black">
                 {item.name}
               </a>
@@ -82,7 +82,7 @@ const Navbar = () => {
                 <a
                   href={item.link}
                   onClick={() => {
-                    setActive(item);
+                    setActive(item.name);
                     setIsOpen(false);
                   }}>
                   {item.name}
