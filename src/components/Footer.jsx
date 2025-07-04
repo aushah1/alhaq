@@ -17,23 +17,41 @@ const Footer = () => {
               LET'S WORK TOGETHER &rarr;{" "}
             </a>
           </div>
-          <div className="links w-full sm:w-1/2 flex flex-col justify-between items-start sm:items-center gap-5">
+          <div className="links w-full sm:w-1/2 flex flex-col justify-between items-start gap-5">
             <div className="box flex justify-between items-center gap-2">
               <div className="icon w-14">
                 <img className="invert w-full" src="/dribble.png" alt="" />
               </div>
               <div className="text">
                 <h4 className="text-2xl font-bold">Dribble</h4>
-                <p className="text-[#c1c1c1]">alhaq.dribble.com</p>
+                <a target="_blank" href="#">
+                  {" "}
+                  <p className="text-[#c1c1c1]">alhaq.dribble.com</p>
+                </a>
               </div>
             </div>
             <div className="box flex justify-between items-center gap-2">
               <div className="icon w-14">
-                <img className="invert w-full" src="/linkedin.png" alt="" />
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/alhaq-gowhar/">
+                  {" "}
+                  <img
+                    className="invert w-full"
+                    src="/linkedin.png"
+                    alt=""
+                  />{" "}
+                </a>
               </div>
               <div className="text">
                 <h4 className="text-2xl font-bold">LinkedIn</h4>
-                <p className="text-[#c1c1c1]">alhaq.dribble.com</p>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/alhaq-gowhar/">
+                  <p className="text-[#c1c1c1]">
+                    https://www.linkedin.com/in/alhaq-gowhar/
+                  </p>
+                </a>
               </div>
             </div>
           </div>
@@ -63,30 +81,32 @@ const Footer = () => {
             </div>
             <p className="text-[#c1c1c1] text-xs sm:text-sm">Phone Number</p>
             <a className="font-bold sm:text-base text-sm" href="">
-              8899886142
+              8899886231
             </a>
           </div>
         </div>
-        <div className="bottom pt-10 text-[#c1c1c1] flex justify-between items-center gap-6 lg:gap-16 sm:text-sm text-xs">
+        <div
+          id="contact"
+          className="bottom pt-10 text-[#c1c1c1] flex justify-between items-center gap-6 lg:gap-16 sm:text-sm text-xs">
           <div className="name hidden sm:flex flex-col justify-center items-center  ">
             <h5 className="text-white ">Alhaq The Designer</h5>
             <h6>Graphic Designer</h6>
           </div>
           <ul className="flex items-center justify-between gap-2 ">
             <li>
-              <a href="#">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a href="#">Projects</a>
+              <a href="#projects">Projects</a>
             </li>
             <li>
-              <a href="#">Services</a>
+              <a href="#services">Services</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
 

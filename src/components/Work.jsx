@@ -76,8 +76,10 @@ const Work = () => {
             </p>
             <p>
               📧 Email me:
-              <a className="text-blue-600" href="mailto:alhaqgowhar@gmail.com">
-                alhaqgowhar@gmail.com
+              <a
+                className="text-blue-600"
+                href="mailto:alhaqgowhar119@gmail.com">
+                alhaqgowhar119@gmail.com
               </a>
             </p>
           </div>

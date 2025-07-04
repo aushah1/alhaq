@@ -3,13 +3,15 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <div className="part1 bg-[#cdcdcd] min-h-[34rem] flex flex-col gap-20 items-center justify-center">
+      <div
+        id="about"
+        className="part1 bg-[#cdcdcd] min-h-[34rem] flex flex-col gap-20 items-center justify-center">
         <div className="text flex flex-col text-3xl sm:text-5xl items-center justify-center">
           <h1>Hey, It's Alhaq Gowhar.</h1>
           <h1>Graphic Designer</h1>
           <h1>Based On Kashmir India</h1>
         </div>
-        <div className="circle flex items-center justify-center bg-white h-28 w-28 flex-col p-4 rounded-full">
+        <div className="circle flex items-center justify-center bg-white h-32 w-32 flex-col p-2 rounded-full">
           <p>Scroll down</p>
           <div className="arrow">&darr;</div>
         </div>
@@ -54,10 +56,15 @@ const About = () => {
       </div>
       <div className="part3 links flex justify-center items-center gap-10 ">
         <div className="img h-14">
-          <img className="h-full" src="/linkedin2.png" alt="" />
+          <a target="_blank" href="https://www.linkedin.com/in/alhaq-gowhar/">
+            <img className="h-full" src="/linkedin2.png" alt="" />{" "}
+          </a>
         </div>
         <div className="img h-14">
-          <img className="h-full" src="/dribble2.png" alt="" />
+          <a target="_blank" href="#">
+            {" "}
+            <img className="h-full" src="/dribble2.png" alt="" />
+          </a>
         </div>
       </div>
     </>

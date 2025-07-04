@@ -3,7 +3,9 @@ import React from "react";
 const Services = () => {
   return (
     <>
-      <div className="heading mt-20 w-4/5 mx-auto flex flex-col justify-center items-center gap-4 ">
+      <div
+        id="services"
+        className="heading mt-20 w-4/5 mx-auto flex flex-col justify-center items-center gap-4 ">
         <h3 className="font-extrabold text-4xl">My Services</h3>
         <p className="lg:w-1/2 w-full">
           I help brands look their best and connect with people through clean,
@@ -28,6 +30,7 @@ const Services = () => {
             <img className="w-full" src="/user.png" alt="" />
           </div>
           <h3 className="font-semibold text-xl">User Experience (UX) Design</h3>
+
           <p className="text-sm text-[#76838b]">
             I focus on how people interact with products. I create user flows,
             wireframes, and prototypes to make sure every design is easy to use

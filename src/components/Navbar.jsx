@@ -4,22 +4,30 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [active, setActive] = useState("Home");
 
-  const navItems = ["Home", "About", "Projects", "Services", "Contact"];
+  const navItems = [
+    { id: 1, name: "Home", link: "/" },
+    { id: 2, name: "About", link: "#about" },
+    { id: 3, name: "Projects", link: "#projects" },
+    { id: 4, name: "Services", link: "#services" },
+    { id: 5, name: "Contact", link: "#contact" },
+  ];
 
   return (
     <>
-      <nav className="bg-[#cdcdcd] h-16 px-4 lg:px-20 flex justify-between items-center gap-16 relative">
+      <nav className="bg-[#cdcdcd]/80 backdrop-blur-sm z-50 h-16 px-4 lg:px-20 flex justify-between items-center gap-16 sticky top-0 ">
         {/* Left - Nav links (Desktop) */}
         <ul className="lg:flex hidden items-center justify-between gap-10 w-1/3">
           {navItems.map((item) => (
             <li
-              key={item}
-              className={active === item ? "text-black" : "text-[#76838b]"}>
+              key={item.id}
+              className={
+                active === item.name ? "text-black" : "text-[#76838b]"
+              }>
               <a
-                href="#"
+                href={item.link}
                 onClick={() => setActive(item)}
                 className="hover:text-black">
-                {item}
+                {item.name}
               </a>
             </li>
           ))}
@@ -34,10 +42,16 @@ const Navbar = () => {
         {/* Right - Social Links (Desktop) */}
         <div className="links hidden lg:flex gap-3 justify-center items-center w-1/3">
           <div className="h-8 bg-white p-2 rounded-lg flex items-center justify-center">
-            <img className="h-5" src="/linkedin.png" alt="linkedin" />
+            <a target="_blank" href="https://www.linkedin.com/in/alhaq-gowhar/">
+              {" "}
+              <img className="h-5" src="/linkedin.png" alt="linkedin" />
+            </a>
           </div>
           <div className="h-8 bg-white p-2 rounded-lg flex items-center justify-center">
-            <img className="h-5" src="/dribble.png" alt="dribble" />
+            <a target="_blank" href="#">
+              {" "}
+              <img className="h-5" src="/dribble.png" alt="dribble" />
+            </a>
           </div>
         </div>
 
@@ -59,19 +73,19 @@ const Navbar = () => {
           <ul className="flex flex-col gap-4">
             {navItems.map((item) => (
               <li
-                key={item}
+                key={item.id}
                 className={
-                  active === item
+                  active === item.name
                     ? "text-black text-lg"
                     : "text-[#76838b] text-lg"
                 }>
                 <a
-                  href="#"
+                  href={item.link}
                   onClick={() => {
                     setActive(item);
                     setIsOpen(false);
                   }}>
-                  {item}
+                  {item.name}
                 </a>
               </li>
             ))}
@@ -79,10 +93,18 @@ const Navbar = () => {
 
           <div className="flex gap-3 mt-4">
             <div className="h-8 bg-white p-2 rounded-lg flex items-center justify-center">
-              <img className="h-5" src="/linkedin.png" alt="linkedin" />
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/alhaq-gowhar/">
+                {" "}
+                <img className="h-5" src="/linkedin.png" alt="linkedin" />
+              </a>
             </div>
             <div className="h-8 bg-white p-2 rounded-lg flex items-center justify-center">
-              <img className="h-5" src="/dribble.png" alt="dribble" />
+              <a target="_blank" href="#">
+                {" "}
+                <img className="h-5" src="/dribble.png" alt="dribble" />
+              </a>
             </div>
           </div>
         </div>
