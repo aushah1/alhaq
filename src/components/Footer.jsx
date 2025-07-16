@@ -18,18 +18,7 @@ const Footer = () => {
             </a>
           </div>
           <div className="links w-full sm:w-1/2 flex flex-col justify-between items-start gap-5">
-            <div className="box flex justify-between items-center gap-2">
-              <div className="icon w-14">
-                <img className="invert w-full" src="/dribble.png" alt="" />
-              </div>
-              <div className="text">
-                <h4 className="text-2xl font-bold">Dribble</h4>
-                <a target="_blank" href="#">
-                  {" "}
-                  <p className="text-[#c1c1c1]">alhaq.dribble.com</p>
-                </a>
-              </div>
-            </div>
+            
             <div className="box flex justify-between items-center gap-2">
               <div className="icon w-14">
                 <a

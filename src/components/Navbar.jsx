@@ -47,10 +47,11 @@ const Navbar = () => {
               <img className="h-5" src="/linkedin.png" alt="linkedin" />
             </a>
           </div>
+
           <div className="h-8 bg-white p-2 rounded-lg flex items-center justify-center">
-            <a target="_blank" href="#">
+            <a target="_blank" href="/cv.pdf">
               {" "}
-              <img className="h-5" src="/dribble.png" alt="dribble" />
+              <img className="h-5" src="/resume.png" alt="dribble" />
             </a>
           </div>
         </div>
@@ -100,10 +101,11 @@ const Navbar = () => {
                 <img className="h-5" src="/linkedin.png" alt="linkedin" />
               </a>
             </div>
+
             <div className="h-8 bg-white p-2 rounded-lg flex items-center justify-center">
-              <a target="_blank" href="#">
+              <a target="_blank" href="cv.pdf">
                 {" "}
-                <img className="h-5" src="/dribble.png" alt="dribble" />
+                <img className="h-5" src="/resume.png" alt="dribble" />
               </a>
             </div>
           </div>
