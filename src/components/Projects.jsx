@@ -6,31 +6,31 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      name: "Digital Agency Website",
+      name: "Spice Clothing Website",
       description:
-        "I designed a modern, minimal website for a digital agency, focusing on clean layouts, bold typography, and visuals that help build trust and showcase services effectively.",
+        "Designed a modern, minimal e-commerce site for a fashion brand, featuring clean layouts, bold typography, and engaging visuals to showcase products effectively.",
       src: "/project1.png",
     },
     {
       id: 2,
-      name: "Clohouse E-commerce Website",
-      description:
-        "I created a sleek and stylish e-commerce interface for a fashion brand, with intuitive navigation, engaging product displays, and a modern aesthetic that enhances the shopping experience.",
-      src: "/project2.png",
-    },
-    {
-      id: 3,
       name: "Sidcup Family Cricket Website",
       description:
         "I developed a dynamic and vibrant website for a cricket stadium and entertainment venue, using energetic imagery and bold layouts to capture the excitement of the sport and attract visitors.",
+      src: "/project2.jpg",
+    },
+    {
+      id: 3,
+      name: "Youth Talks by Chris Beyon",
+      description:
+        "A fresh new podcast spotlighting the real voices of today’s youth. We’re diving into honest conversations about life, identity, ambition, mental health, and everything in between.",
       src: "/project3.png",
     },
     {
       id: 4,
-      name: "Anywhere Skincare Advertisement",
+      name: "Digital Agency Website",
       description:
-        "I crafted a fresh, elegant advertisement for a skincare brand, highlighting natural ingredients and modern design elements to connect with beauty-conscious audiences and promote the product effectively.",
-      src: "/project4.png",
+        "I designed a modern, minimal website for a digital agency, focusing on clean layouts, bold typography, and visuals that help build trust and showcase services effectively.",
+      src: "/project4.jpg",
     },
     {
       id: 5,
@@ -63,7 +63,9 @@ const Projects = () => {
             } items-center justify-between gap-10 transition-all duration-700 ease-in-out transform hover:scale-[1.01]`}>
             <div className="w-full md:w-1/2 group relative overflow-hidden">
               <img
-                className="rounded-lg w-full max-h-96 object-cover shadow-md cursor-pointer object-top transition-transform duration-500 ease-in-out group-hover:scale-105"
+                className="rounded-lg w-full max-h-96 object-cover shadow-md cursor-pointer object-top
+    transition-transform duration-500 ease-in-out group-hover:scale-105
+    animate-fadeUp"
                 src={item.src}
                 alt={item.name}
                 onClick={() => setSelectedImage(item.src)}
